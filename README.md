@@ -31,7 +31,19 @@ This may particularly be useful in a situation where
 4. Edit the NGIИX configuration file `~/PROJECTS/hello_world/hello_world_nginx_config/example_nginx_no-https.conf` by
     - replacing `/the/path/to/your/project` with the actual **full path** to your project. This should neither be literally `$HOME/PROJECTS/hello_world` nor `~/PROJECTS/hello_world`, you have to write it in full. If your username is *kate*, for instance, then this will be `/home/kate/PROJECTS/hello_world`
     - replacing `example.org` with your actual domain
-5. Test your NGIИX configuration: `sudo nginx -t`.
-6. If everything is okay, restart NGIИX (`sudo systemctl restart nginx`) and check your domain to see that you can access your simple test site.
+
+## Next Steps
+
+1. You now need to inform NGIИX about your new site:
+
+    ```bash
+    # navigate to /etc/nginx/sites-enabled/ and in there, create a symlink to your new site's NGIИX configuration
+    cd /etc/nginx/sites-enabled/
+    # replace `example.org` with your own suitable reference
+    sudo ln -s ~/PROJECTS/hello_world/hello_world_nginx_config/example_nginx_no-https.conf example.org
+    ```
+
+2. Test your NGIИX configuration: `sudo nginx -t`.
+3. If everything is okay, restart NGIИX (`sudo systemctl restart nginx`) and check your domain to see that you can access your simple test site.
 
 ---
