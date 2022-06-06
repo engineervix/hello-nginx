@@ -12,7 +12,7 @@ This may particularly be useful in a situation where
 ## First things first
 
 1. Clone this repo: `git clone https://github.com/engineervix/hello-nginx.git`
-2. Create a directory for your test website. For instance, let's call it `hello_world`, and let's create it in `$HOME/PROJECTS/`. On the CLI, this will looks like this:
+2. Create a directory for your test website. For instance, let's call it `hello_world`, and let's create it in `$HOME/PROJECTS/`. On the CLI, this would look like this:
 
     ```bash
     # This will also create the PROJECTS directory (if it doesn't exist) in your $HOME directory,
