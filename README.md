@@ -44,6 +44,6 @@ This may particularly be useful in a situation where
     ```
 
 2. Test your NGIИX configuration: `sudo nginx -t`.
-3. If everything is okay, restart NGIИX (`sudo systemctl restart nginx`) and check your domain to see that you can access your simple test site.
+3. If everything is okay, reload NGIИX configuration (`sudo nginx -s reload`) and check your domain to see that you can access your simple test site.
 
 ---
